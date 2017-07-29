@@ -26,6 +26,8 @@
 		5FE028811F2BC0AA001F1135 /* DetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE028801F2BC0AA001F1135 /* DetailViewControllerTests.swift */; };
 		5FE028831F2BE907001F1135 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE028821F2BE907001F1135 /* DetailViewController.swift */; };
 		5FE028861F2BEAC4001F1135 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FE028851F2BEAC4001F1135 /* MapKit.framework */; };
+		5FE028881F2BF777001F1135 /* InputViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE028871F2BF777001F1135 /* InputViewControllerTests.swift */; };
+		5FE0288A1F2BF814001F1135 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE028891F2BF814001F1135 /* InputViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,8 @@
 		5FE028801F2BC0AA001F1135 /* DetailViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewControllerTests.swift; path = Controller/DetailViewControllerTests.swift; sourceTree = "<group>"; };
 		5FE028821F2BE907001F1135 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = Controller/DetailViewController.swift; sourceTree = "<group>"; };
 		5FE028851F2BEAC4001F1135 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		5FE028871F2BF777001F1135 /* InputViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InputViewControllerTests.swift; path = Controller/InputViewControllerTests.swift; sourceTree = "<group>"; };
+		5FE028891F2BF814001F1135 /* InputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InputViewController.swift; path = Controller/InputViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,7 @@
 				5F3F2C161F2A5D5B007FDD2E /* ItemListDataProvider.swift */,
 				5F3F2C1A1F2A81D8007FDD2E /* ItemCell.swift */,
 				5FE028821F2BE907001F1135 /* DetailViewController.swift */,
+				5FE028891F2BF814001F1135 /* InputViewController.swift */,
 			);
 			path = Todo;
 			sourceTree = "<group>";
@@ -148,6 +153,7 @@
 				5F3F2C181F2A69FC007FDD2E /* ItemListDataProviderTests.swift */,
 				5FE0287E1F2BAB7D001F1135 /* ItemCellTests.swift */,
 				5FE028801F2BC0AA001F1135 /* DetailViewControllerTests.swift */,
+				5FE028871F2BF777001F1135 /* InputViewControllerTests.swift */,
 			);
 			path = TodoTests;
 			sourceTree = "<group>";
@@ -270,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FE0288A1F2BF814001F1135 /* InputViewController.swift in Sources */,
 				5F6921DC1F27FFA900785DFA /* ItemManager.swift in Sources */,
 				5F3F2C171F2A5D5B007FDD2E /* ItemListDataProvider.swift in Sources */,
 				5F6921A11F27CB5400785DFA /* AppDelegate.swift in Sources */,
@@ -288,6 +295,7 @@
 				5FE0287F1F2BAB7D001F1135 /* ItemCellTests.swift in Sources */,
 				5F3F2C191F2A69FC007FDD2E /* ItemListDataProviderTests.swift in Sources */,
 				5F6921DA1F27FF0C00785DFA /* ItemManagerTests.swift in Sources */,
+				5FE028881F2BF777001F1135 /* InputViewControllerTests.swift in Sources */,
 				5F6921D81F27F2A600785DFA /* LocationTests.swift in Sources */,
 				5FE028811F2BC0AA001F1135 /* DetailViewControllerTests.swift in Sources */,
 				5F3F2C131F2A58C5007FDD2E /* ItemListViewControllerTest.swift in Sources */,
