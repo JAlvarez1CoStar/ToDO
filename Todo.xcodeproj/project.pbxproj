@@ -87,6 +87,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F2A4ED01F329D9500E8253F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5F3F2C141F2A5945007FDD2E /* ItemListViewController.swift */,
+				5F3F2C161F2A5D5B007FDD2E /* ItemListDataProvider.swift */,
+				5FE028821F2BE907001F1135 /* DetailViewController.swift */,
+				5FE028891F2BF814001F1135 /* InputViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		5F2A4ED11F329DBB00E8253F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5F3F2C121F2A58C5007FDD2E /* ItemListViewControllerTest.swift */,
+				5FE0287E1F2BAB7D001F1135 /* ItemCellTests.swift */,
+				5F3F2C181F2A69FC007FDD2E /* ItemListDataProviderTests.swift */,
+				5FE028801F2BC0AA001F1135 /* DetailViewControllerTests.swift */,
+				5FE028871F2BF777001F1135 /* InputViewControllerTests.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		5F3F2C101F2A553F007FDD2E /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,11 +158,8 @@
 				5F6921A91F27CB5400785DFA /* LaunchScreen.storyboard */,
 				5F6921AC1F27CB5400785DFA /* Info.plist */,
 				5F3F2C101F2A553F007FDD2E /* Model */,
-				5F3F2C141F2A5945007FDD2E /* ItemListViewController.swift */,
-				5F3F2C161F2A5D5B007FDD2E /* ItemListDataProvider.swift */,
+				5F2A4ED01F329D9500E8253F /* Controller */,
 				5F3F2C1A1F2A81D8007FDD2E /* ItemCell.swift */,
-				5FE028821F2BE907001F1135 /* DetailViewController.swift */,
-				5FE028891F2BF814001F1135 /* InputViewController.swift */,
 			);
 			path = Todo;
 			sourceTree = "<group>";
@@ -149,11 +169,7 @@
 			children = (
 				5F6921B71F27CB5400785DFA /* Info.plist */,
 				5F3F2C111F2A554E007FDD2E /* Model */,
-				5F3F2C121F2A58C5007FDD2E /* ItemListViewControllerTest.swift */,
-				5F3F2C181F2A69FC007FDD2E /* ItemListDataProviderTests.swift */,
-				5FE0287E1F2BAB7D001F1135 /* ItemCellTests.swift */,
-				5FE028801F2BC0AA001F1135 /* DetailViewControllerTests.swift */,
-				5FE028871F2BF777001F1135 /* InputViewControllerTests.swift */,
+				5F2A4ED11F329DBB00E8253F /* Controller */,
 			);
 			path = TodoTests;
 			sourceTree = "<group>";

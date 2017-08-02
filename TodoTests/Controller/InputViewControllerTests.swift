@@ -81,8 +81,7 @@ class InputViewControllerTests: XCTestCase {
         let testItem = ToDoItem(title: "Foo",
                                 itemDescription: "Baz",
                                 timestamp: timestamp,
-                                location: Location(name: "Bar",
-                                                   coordinate: coordinate))
+                                location: Location(name: "Bar", coordinate: coordinate))
         
         XCTAssertEqual(item, testItem)
     }
@@ -95,6 +94,26 @@ class InputViewControllerTests: XCTestCase {
         }
         
         XCTAssertTrue(actions.contains("save"))
+    }
+    
+    func test_Geocoder_FetchesCoordinate() {
+        CLGeocoder().geocodeAddressString("Infinite Loop 1, Cupertino") { (placemarks, error) in
+            let coordinate = placemarks?.first?.location?.coordinate
+            guard let latitude = coordinate?.latitude else {
+                XCTFail()
+                return
+            }
+            
+            guard let longitude = coordinate?.longitude else {
+                XCTFail()
+                return
+            }
+            
+            XCTAssertEqualWithAccuracy(latitude, 0, accuracy: 0.0001)
+            XCTAssertEqualWithAccuracy(longitude, 0, accuracy: 0.0001)
+//            XCTAssertEqualWithAccuracy(latitude, 37.3316, accuracy: 0.0001)
+//            XCTAssertEqualWithAccuracy(longitude, -122.0300, accuracy: 0.0001)
+        }
     }
 }
 
