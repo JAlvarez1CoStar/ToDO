@@ -34,7 +34,7 @@ class InputViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    func save() {
+    @IBAction func save() {
         guard let titleString = titleTextField.text,
             titleString.characters.count > 0 else { return }
         let date: Date?

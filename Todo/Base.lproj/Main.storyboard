@@ -185,6 +185,9 @@
                                 <rect key="frame" x="60" y="342" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="save" destination="4zS-R3-727" eventType="touchUpInside" id="atX-P9-611"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qdv-98-5nq">
                                 <rect key="frame" x="60" y="380" width="46" height="30"/>
