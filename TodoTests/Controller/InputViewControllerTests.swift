@@ -97,8 +97,11 @@ class InputViewControllerTests: XCTestCase {
     }
     
     func test_Geocoder_FetchesCoordinate() {
+        let geocoderAnswered = expectation(description: "Geocoder")
+        
         CLGeocoder().geocodeAddressString("Infinite Loop 1, Cupertino") { (placemarks, error) in
             let coordinate = placemarks?.first?.location?.coordinate
+            
             guard let latitude = coordinate?.latitude else {
                 XCTFail()
                 return
@@ -109,11 +112,13 @@ class InputViewControllerTests: XCTestCase {
                 return
             }
             
-            XCTAssertEqualWithAccuracy(latitude, 0, accuracy: 0.0001)
-            XCTAssertEqualWithAccuracy(longitude, 0, accuracy: 0.0001)
-//            XCTAssertEqualWithAccuracy(latitude, 37.3316, accuracy: 0.0001)
-//            XCTAssertEqualWithAccuracy(longitude, -122.0300, accuracy: 0.0001)
+            XCTAssertEqualWithAccuracy(latitude, 37.3316, accuracy: 0.0001)
+            XCTAssertEqualWithAccuracy(longitude, -122.0300, accuracy: 0.001)
+            
+            geocoderAnswered.fulfill()
         }
+        
+        waitForExpectations(timeout: 3, handler: nil)
     }
 }
 
